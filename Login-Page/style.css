@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: wheat;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 59px;
+    padding: 0 40px;
+}
+.nav{
+    position: absolute;
+    background-color: aqua;
+}
+.top .nav .i{
+    font-size: 25px;
+   
+}
+.top{
+    background-color: transparent;
+    border: 1px solid rgb(12, 12, 11);
+}
+.i{
+    font-size: 30px;
+}
+.login-text h1{
+    text-align: center;
+    padding-top: 352px;
+    padding-left: 576px;
+}
+.login-text h4{
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 576px;
+}
+form{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13px;
+    padding-left: 576px;
+}
+form label{
+    
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    display: inline-block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
+}
+#email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    margin-top: 581px;
+    font-size: 20px;
+    font-weight: 200;
+}
+#password{
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+   
+    margin-top: 2px;
+    font-size: 20px;
+    font-weight: 200; 
+}
+.input{
+     align-items: center;
+    display: block;
+    position: relative;
+}
+button{
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    margin-right: 715px;
+    margin-left: -704px;
+
+}
