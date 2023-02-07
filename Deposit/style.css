@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+  body { 
+    display: grid;
+    grid-template-areas: 
+      "header header ads"
+      "nav article article"
+      "nav footer footer";
+    grid-template-rows: 80px 1fr;  
+    grid-template-columns: 20% 1fr 0%;
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
+    height: 100vh;
+    margin: 0;
+    }  
+    header, article, nav, div {
+      padding: 1.2em;
+      background: wheat;
+      }
+    #pageHeader {
+      grid-area: header;
+      }
+    #mainArticle { 
+      grid-area: article;      
+      }
+    #mainNav { 
+      grid-area: nav; 
+      }
+#three-dots{
+  font-size: 25px;
+}
+#power-off{
+  float: right;
+  font-size: 25px;
+}
+header{
+  background-color: wheat;
+  border: 1px solid black;
+  color: black;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+#Active{
+  background-color: aquamarine;
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+table, th, td {
+    border: 1px solid black;
+    
+  }
+  td{
+    text-align: center;
+  }
+  table{
+    height: 20%;
+  }
+  .fa-circle-check{
+    font-size: 25px;
+  }
+  button{
+    width: 85px;
+    height: 41px;
+    margin: 1rem 0;
+    padding: 10px 7px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+   cursor: pointer;
+   transition: 0.2s;
+   align-items: center;
+}
+.input{
+    align-items: center;
+   display: inline;
+   position: relative;
+   padding: 10px ;
+   height: 18px;
+   align-items: center;
+}
+button:hover{
+    background-color: transparent;
+    color: black;
+}
