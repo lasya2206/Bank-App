@@ -1,0 +1,12 @@
+Reference Taken from W3schools, stackoverflow, youtube and past codes
+
+Expected Time for Login: 30 mins
+Time Taken: 1 hour
+Reason for Glitch: Due to excessive padding and margin it took a lot of time
+
+Expected Time for All Customer Page: 40 mins
+Time Taken: 1 hour
+Reason of Glitch: some issues setting side menu bar
+
+Other Pages Expected Time: 30 mins per Pages
+Time Taken: 15 mins per page
