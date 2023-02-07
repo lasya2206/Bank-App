@@ -3,47 +3,280 @@
     padding: 0;
    
 }
-body{
-    width: 100vw;
+  body { 
+    display: grid;
+    grid-template-areas: 
+      "header header ads"
+      "nav article article"
+      "nav footer footer";
+    grid-template-rows: 80px 1fr;  
+    grid-template-columns: 20% 1fr 0%;
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
     height: 100vh;
-    background-color: wheat;
+    margin: 0;
+    }  
+    header, article, nav, div {
+      padding: 1.2em;
+      background: wheat;
+      }
+    #pageHeader {
+      grid-area: header;
+      }
+    #mainArticle { 
+      grid-area: article;      
+      }
+    #mainNav { 
+      grid-area: nav; 
+      }
+#three-dots{
+  font-size: 25px;
+}
+#power-off{
+  float: right;
+  font-size: 25px;
+}
+header{
+  background-color: wheat;
+  border: 1px solid black;
+  color: black;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
 }
 
-.nav{
-   position: relative;
-   top: 10px;
-   left: 10px;
+header li {
+  float: left;
 }
-#mysidenav{
-    font-size: 25px;
-    
-   
+
+header li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
 }
-.sidebar {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 16px;
-  }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+#Active{
+  background-color: aquamarine;
+}
+table, th, td {
+  border: 1px solid black;
   
-  .sidebar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-  }
+}
+td{
+  text-align: center;
+}
+table{
+  height: 90%;
+}
+.fa-circle-check{
+  font-size: 25px;
+}
+.fa-ban{
+  font-size: 25px;
+}
+@media screen and (max-width:900px){
+  body { 
+    display: grid;
+    grid-template-areas: 
+      "header header ads"
+      "nav article article"
+      "nav footer footer";
+    grid-template-rows: 80px 1fr;  
+    grid-template-columns: 20% 1fr 0%;
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
+    height: 100vh;
+    margin: 0;
+    }  
+    header, article, nav, div {
+      padding: 1.2em;
+      background: wheat;
+      }
+    #pageHeader {
+      grid-area: header;
+      }
+    #mainArticle { 
+      grid-area: article;      
+      }
+    #mainNav { 
+      grid-area: nav; 
+      }
+#three-dots{
+  font-size: 25px;
+}
+#power-off{
+  float: right;
+  font-size: 25px;
+}
+header{
+  background-color: wheat;
+  border: 1px solid black;
+  color: black;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+#Active{
+  background-color: aquamarine;
+}
+table, th, td {
+  border: 1px solid black;
   
-  .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-  }
+}
+td{
+  text-align: center;
+}
+table{
+  height: 90%;
+}
+.fa-circle-check{
+  font-size: 25px;
+}
+.fa-ban{
+  font-size: 25px;
+}
+}
+@media screen and (max-width:700px){
+  body { 
+    display: grid;
+    grid-template-areas: 
+      "header header ads"
+      "nav article article"
+      "nav footer footer";
+    grid-template-rows: 80px 1fr;  
+    grid-template-columns: 20% 1fr 0%;
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
+    height: 118vh;
+    margin: 0;
+    }  
+    header, article, nav, div {
+      padding: 1.2em;
+      background: wheat;
+      }
+    #pageHeader {
+      grid-area: header;
+      }
+    #mainArticle { 
+      grid-area: article;      
+      }
+    #mainNav { 
+      grid-area: nav; 
+      width: 80px;
+      }
+#three-dots{
+  font-size: 25px;
+}
+#power-off{
+  float: right;
+  font-size: 25px;
+}
+header{
+  background-color: wheat;
+  border: 1px solid black;
+  color: black;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+header li {
+  float: left;
+}
+
+header li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 112px;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  width: 100px;
+}
+#Active{
+  background-color: aquamarine;
+}
+table, th, td {
+  border: 1px solid black;
+  
+}
+td{
+  text-align: center;
+}
+table{
+  height: 90%;
+}
+.fa-circle-check{
+  font-size: 25px;
+}
+.fa-ban{
+  font-size: 25px;
+}
+}
